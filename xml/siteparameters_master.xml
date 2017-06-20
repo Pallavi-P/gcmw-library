@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This file contains the site parameters for loading into
+common constants file. These common constants are then
+referred by subsite-initializer plugin and / or the 
+template files.
+the format of tags is as under:
+<site>
+		<title>Sitename in Capitals</title>
+		<id>numeric id of site</id>
+		<url><![CDATA[complete url with http://]]></url>
+		<tableprefix>wp_siteid_</tableprefix>
+	</site>
+-->
+<site_parameters>
+	<site>
+		<title>GCMW</title>
+		<id>1</id>
+		<url><![CDATA[http://www.chinmayamission.com]]></url>
+		<tableprefix>wp_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>VIBHOOTI</title>
+		<id>6</id>
+		<url><![CDATA[http://vibhooti.chinmayamission.com]]></url>
+		<tableprefix>wp_6_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>BCC</title>
+		<id>7</id>
+		<url><![CDATA[http://bcc.chinmayamission.com]]></url>
+		<tableprefix>wp_7_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>CMW</title>
+		<id>8</id>
+		<url><![CDATA[http://cmw.chinmayamission.com]]></url>
+		<tableprefix>wp_8_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>SINGAPORE</title>
+		<id>9</id>
+		<url><![CDATA[http://singapore.chinmayamission.com]]></url>
+		<tableprefix>wp_9_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>DELHI</title>
+		<id>10</id>
+		<url><![CDATA[http://vibhooti.chinmayamission.com]]></url>
+		<tableprefix>wp_10_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>BHAVNAGAR</title>
+		<id>12</id>
+		<url><![CDATA[http://bhavnagar.chinmayamission.com]]></url>
+		<tableprefix>wp_12_</tableprefix>
+		<localcss></localcss>
+		<sitestatus>1</sitestatus>
+	</site>
+	<site>
+		<title>PUSHPANJALI</title>
+		<id>13</id>
+		<url><![CDATA[http://pushpanjali.chinmayamission.com]]></url>
+		<tableprefix>wp_13_</tableprefix>
+		<localcss>pushpanjali.min.css</localcss>
+		<sitestatus>0</sitestatus>
+	</site>
+</site_parameters>

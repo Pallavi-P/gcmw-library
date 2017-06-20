@@ -1,0 +1,61 @@
+@mixin single-color-grad-bg ($defaultcolor, $bgcolor)
+{
+	background:$defaultcolor; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient($bgcolor, $bgcolor);
+	background: -o-linear-gradient($bgcolor, $bgcolor);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bgcolor), to($bgcolor)); /* Older webkit syntax */
+	background: -webkit-linear-gradient($bgcolor, $bgcolor);
+}
+
+@mixin three-color-grad-bg($fromlocation, $bgcolorstart,  $bgcolormid, $bgcolorend, $gradstart, $gradmid, $gradend ) 
+{
+//colour can be in rgb(a,b,c, alpha) format or hexcode, gradiant should be in %
+  background: $bgcolorstart; /* Old browsers */
+  background: -moz-linear-gradient(top, $bgcolorstart $gradstart, $bgcolormid $gradmid, $bgcolorend $gradend); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($gradstart,$bgcolorstart), color-stop($gradmid,$bgcolormid ), color-stop($bgcolorend, $gradend)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $bgcolorstart $gradstart,$bgcolormid $gradmid,$bgcolormid $gradend); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $bgcolorstart $gradstart,$bgcolormid $gradmid,$bgcolorend $gradend); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $bgcolorstart $gradstart,$bgcolormid $gradmid,$bgcolorend $gradend); /* IE10+ */
+  background: linear-gradient(to bottom, $bgcolorstart $gradstart,$bgcolormid $gradmid,$bgcolorend $gradend); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+}
+@mixin bottom-left-radius($left-rad)
+{
+	  border-bottom-left-radius:$left-rad;
+      -webkit-border-bottom-left-radius:$left-rad;
+      -moz-border-bottom-left-radius:$left-rad;
+      -ms-border-bottom-left-radius:$left-rad;
+      -o-border-bottom-left-radius:$left-rad;
+	
+}
+@mixin bottom-right-radius($right-rad)
+{
+ 	 border-bottom-right-radius:$right-rad;
+      -webkit-border-bottom-right-radius:$right-rad;
+      -moz-border-bottom-right-radius:$right-rad;
+      -o-border-bottom-right-radius:$right-rad;
+      -ms-border-bottom-right-radius:$right-rad;	
+}
+
+@mixin bottom-radius($left-rad,$right-rad)
+{
+	@include bottom-left-radius($left-rad);
+	@include bottom-right-radius($right-rad);
+}
+
+@mixin radius($rad)
+{
+ 	border-radius:$rad;
+    -webkit-border-radius:$rad;
+    -moz-border-radius:$rad;
+    -o-border-radius:$rad;
+    -ms-border-radius:$rad;
+}
+
+@mixin box-shadow($boxshadow)
+
+{
+	moz-box-shadow: $boxshadow;
+	-webkit-box-shadow: $boxshadow;
+	box-shadow: $boxshadow;
+}
